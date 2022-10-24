@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite
+    alternate linear;
+    width: 400%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.container{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title{
+    color: #160f9f;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 600px;
+    background: #0575E6; 
+    background: -webkit-linear-gradient(to right, hsla(227, 97%, 24%, 0.603), hsla(210, 96%, 46%, 0.603)), url(../img/Header1_Texto.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(227, 97%, 24%, 0.603), hsla(210, 96%, 46%, 0.603)), url(../img/Header1_Texto.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+header .texts-header{
+display: flex;
+height: 430px;
+width: 100%;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+.texts-header h1{
+    font-size: 50px;
+    color:#faf100
+}
+
+.texts-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #faf100;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+.container-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* Galeria */
+
+.container-products{
+    background: #fff;
+}
+
+.galery-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+
+.img-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galery{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(243, 83%, 34%,0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galery img{
+    width: 50px;
+}
+
+.hover-galery p{
+    color:#faf100
+}
+
+.img-port:hover .hover-galery{
+    transform: scale(1);
+}
+
+/* Contacto */
+.container-contact{
+    width: 400px;
+    max-width: 100%;
+    background:rgba(250, 241, 0,0.5);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    color:#160f9f;
+    box-shadow: 7px 13px 37px #000;
+    position: relative;
+}
+
+.controls{
+    width: 100%;
+    background:#04003a;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0575E6;
+    font-size: 18px;
+    color:white;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #cb2e2e;
+    padding-top: 20px;
+}
+
+.container-contact .botons{
+    width: 100%;
+    background:#0575E6;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/* Footer */
+
+footer{
+    background: #04003a;
+    padding: 20px 0 5px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container-footer{
+    color: white;
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.title-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color:#faf100
+    
+}
+
+
